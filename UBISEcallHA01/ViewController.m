@@ -110,7 +110,7 @@ NSString* idForVendor;
         
         
         
-        NSLog(@">>4566>>>1234%@",idForVendor);
+        NSLog(@">>>>>1234%@",idForVendor);
         navigateYN = NO;
     }
     

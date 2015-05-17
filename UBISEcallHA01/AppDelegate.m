@@ -23,6 +23,8 @@
     [self.window setRootViewController:viewController];
     
     [self.window addSubview:viewController.view];
+    
+    //this 
     return YES;
 }
 
