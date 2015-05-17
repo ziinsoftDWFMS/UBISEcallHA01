@@ -10,8 +10,9 @@
 
 @interface ViewController : UIViewController<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *locationTxt;
+@property (weak, nonatomic) IBOutlet UIButton *sender;
 
-- (IBAction)click:(id)sender;
+- (IBAction)sender:(id)sender;
 - (void)retunData:(NSDictionary*)data;
 
 @end

@@ -168,6 +168,25 @@ NSString* idForVendor;
     
     return YES;
 }
+- (IBAction)sender:(id)sender {
+    UIDevice *device = [UIDevice currentDevice];
+    NSString* idForVendor = [device.identifierForVendor UUIDString];
+    
+    CAllServer* res = [CAllServer alloc];
+    NSMutableDictionary* param = [[NSMutableDictionary alloc] init];
+    [param setObject:@"HA01" forKey:@"code"];
+    [param setValue:@"S" forKey:@"gubun"];
+    [param setObject:idForVendor forKey:@"deviceId"];
+    [param setValue:self.locationTxt.text forKey:@"location"];
+    
+    self.locationTxt.text = @"";
+    
+    
+    NSString* str = [res stringWithUrl:@"emcInfoPush.do" VAL:param];
+    
+    NSLog(@" %@",str);
+
+}
 
 
 - (BOOL) connectedToNetwork {

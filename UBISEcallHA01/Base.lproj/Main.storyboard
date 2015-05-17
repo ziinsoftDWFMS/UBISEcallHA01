@@ -45,7 +45,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="click:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NQe-2D-Sf0"/>
+                                    <action selector="sender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AQZ-FC-6tP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,7 +64,7 @@
                     <navigationItem key="navigationItem" id="LEl-ED-Z9B"/>
                     <connections>
                         <outlet property="locationTxt" destination="h7A-JX-xyx" id="xbo-lc-Miq"/>
-                        <outlet property="view" destination="zr7-Gq-C8M" id="pBL-JM-QLh"/>
+                        <outlet property="sender" destination="zr7-Gq-C8M" id="acf-7b-vqf"/>
                         <segue destination="ava-x5-gbS" kind="show" identifier="showIdentiview" id="jlz-5T-kBP"/>
                     </connections>
                 </viewController>
