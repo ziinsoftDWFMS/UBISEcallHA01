@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0EF4A80E-E3EA-4B8A-9BC9-8CD3DDBB4B3A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UBISEcallHA01</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>949CF745B88425DDC3C163B0040085E5EFFD83EC</key>
+		<string>https://github.com/ziinsoftDWFMS/UBISEcallHA01.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UBISEcallHA01.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>949CF745B88425DDC3C163B0040085E5EFFD83EC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ziinsoftDWFMS/UBISEcallHA01.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>949CF745B88425DDC3C163B0040085E5EFFD83EC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>949CF745B88425DDC3C163B0040085E5EFFD83EC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UBISEcallHA01</string>
+		</dict>
+	</array>
+</dict>
+</plist>
