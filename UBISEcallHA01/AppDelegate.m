@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  UBISEcallHA01
+//  UBISEcallWT01
 //
 //  Created by youngseok Kim on 2015. 5. 10..
 //  Copyright (c) 2015년 dwni. All rights reserved.
@@ -23,8 +23,6 @@
     [self.window setRootViewController:viewController];
     
     [self.window addSubview:viewController.view];
-    
-    //this 
     return YES;
 }
 

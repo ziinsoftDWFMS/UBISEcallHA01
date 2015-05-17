@@ -110,7 +110,7 @@ NSString* idForVendor;
         
         
         
-        NSLog(@">>>>>1234%@",idForVendor);
+        NSLog(@">>4566>>>1234%@",idForVendor);
         navigateYN = NO;
     }
     
@@ -123,10 +123,13 @@ NSString* idForVendor;
 
 
 - (void)viewDidAppear:(BOOL)animated {
-    
+    NSLog(@"navigateYN %hhd",navigateYN);
     if (navigateYN) {
+        NSLog(@"navigateYN0 %hhd",navigateYN);
         navigateYN = NO;
         [self performSegueWithIdentifier:@"showIdentiview" sender:self];
+    }else{
+        NSLog(@"navigateYN1 %hhd",navigateYN);
     }
 }
 
