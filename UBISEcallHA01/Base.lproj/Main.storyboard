@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="누수/동파" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCK-0c-Hoe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="안전사고 발생" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCK-0c-Hoe">
                                 <rect key="frame" x="16" y="94" width="568" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -27,23 +27,27 @@
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rOr-8q-3Cs">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="UBIS Ecall 발신(누수/동파)" id="DP0-GR-i8Z"/>
+                                    <navigationItem title="UBIS Ecall 발신(안전사고)" id="DP0-GR-i8Z"/>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="43" verticalHuggingPriority="43" horizontalCompressionResistancePriority="43" verticalCompressionResistancePriority="43" ambiguous="YES" misplaced="YES" image="ic_safely_accid.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zgf-yl-SV3">
-                                <rect key="frame" x="5" y="28" width="43" height="44"/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h7A-JX-xyx">
                                 <rect key="frame" x="156" y="134" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b9J-a1-L6f">
-                                <rect key="frame" x="72" y="203" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zr7-Gq-C8M">
+                                <rect key="frame" x="156" y="192" width="288" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="전송">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="click:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NQe-2D-Sf0"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="43" verticalHuggingPriority="43" horizontalCompressionResistancePriority="43" verticalCompressionResistancePriority="43" ambiguous="YES" misplaced="YES" image="ic_safely_accid.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zgf-yl-SV3">
+                                <rect key="frame" x="5" y="28" width="43" height="44"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -52,18 +56,15 @@
                             <constraint firstItem="rOr-8q-3Cs" firstAttribute="bottom" secondItem="Zgf-yl-SV3" secondAttribute="bottom" id="P8W-hy-1Sa"/>
                             <constraint firstItem="sCK-0c-Hoe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="PF4-nN-aPF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rOr-8q-3Cs" secondAttribute="trailing" constant="-16" id="fqQ-0k-Wij"/>
+                            <constraint firstAttribute="centerX" secondItem="zr7-Gq-C8M" secondAttribute="centerX" id="fzE-lb-6NV"/>
                             <constraint firstItem="sCK-0c-Hoe" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="kKW-kf-ydZ"/>
                             <constraint firstItem="rOr-8q-3Cs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="w7r-pH-h7O"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="b9J-a1-L6f"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="LEl-ED-Z9B"/>
                     <connections>
                         <outlet property="locationTxt" destination="h7A-JX-xyx" id="xbo-lc-Miq"/>
+                        <outlet property="view" destination="zr7-Gq-C8M" id="pBL-JM-QLh"/>
                         <segue destination="ava-x5-gbS" kind="show" identifier="showIdentiview" id="jlz-5T-kBP"/>
                     </connections>
                 </viewController>
@@ -106,7 +107,7 @@
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="baU-zl-FfX">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="UBIS Ecall 발신(누수/동파)" id="CwH-xq-0oG"/>
+                                    <navigationItem title="UBIS Ecall 발신(안전사고)" id="CwH-xq-0oG"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihj-YG-9fq">
@@ -115,9 +116,6 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="43" verticalHuggingPriority="43" horizontalCompressionResistancePriority="43" verticalCompressionResistancePriority="43" ambiguous="YES" misplaced="YES" image="ic_safely_accid.png" translatesAutoresizingMaskIntoConstraints="NO" id="9cY-8s-pcY">
-                                <rect key="frame" x="7" y="28" width="43" height="44"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PZ-92-QY1">
                                 <rect key="frame" x="354" y="233" width="30" height="30"/>
                                 <state key="normal" title="취소">
@@ -127,6 +125,9 @@
                                     <action selector="cancelEvent:" destination="ava-x5-gbS" eventType="touchUpInside" id="TiA-GN-Bdj"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="43" verticalHuggingPriority="43" horizontalCompressionResistancePriority="43" verticalCompressionResistancePriority="43" ambiguous="YES" misplaced="YES" image="ic_safely_accid.png" translatesAutoresizingMaskIntoConstraints="NO" id="9cY-8s-pcY">
+                                <rect key="frame" x="7" y="28" width="43" height="44"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>

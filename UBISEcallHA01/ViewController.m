@@ -45,7 +45,7 @@ NSString* idForVendor;
     //[param setValue:@"" forKey:@"hp"];
     
     [param setValue:@"S" forKey:@"gubun"];
-    [param setValue:@"HA01" forKey:@"code"];
+    [param setValue:@"FR01" forKey:@"code"];
     
     [param setObject:idForVendor forKey:@"deviceId"];
     
@@ -123,13 +123,10 @@ NSString* idForVendor;
 
 
 - (void)viewDidAppear:(BOOL)animated {
-    NSLog(@"navigateYN %hhd",navigateYN);
+    
     if (navigateYN) {
-        NSLog(@"navigateYN0 %hhd",navigateYN);
         navigateYN = NO;
         [self performSegueWithIdentifier:@"showIdentiview" sender:self];
-    }else{
-        NSLog(@"navigateYN1 %hhd",navigateYN);
     }
 }
 
